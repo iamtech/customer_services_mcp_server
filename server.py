@@ -13,8 +13,8 @@ def customer_accounts(customer_id: int):
     accounts = get_customer_accounts(customer_id)
     return accounts
 
-@mcp.tool
-async def account_balance(customer_id: int, account_id: int):
+@mcp.tool()
+async def account_balance(customer_id: str, account_id: str):
     """
     Returns account balance from external API.
     """
