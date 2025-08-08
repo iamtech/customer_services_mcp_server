@@ -5,8 +5,8 @@ from accounts.db import get_customer_accounts
 
 mcp = FastMCP(name="Customer Account MCP Server")
 
-@mcp.resource(uri="customer://{customer_id}/accounts")
-def customer_accounts(customer_id: int):
+@mcp.tool()
+def customer_accounts(customer_id: str):
     """
     Returns list of accounts for a customer.
     """
