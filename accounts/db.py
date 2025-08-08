@@ -1,6 +1,6 @@
 import sqlite3
 
-DB_PATH = "/home/iamtech/Documents/workspace/customer_services_mcp_server/data/customer_data.db"
+DB_PATH = "../data/customer_data.db"
 
 def get_db_conn():
     return sqlite3.connect(DB_PATH)
